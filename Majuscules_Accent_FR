@@ -1,0 +1,18 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+SetTitleMatchMode 2
+#SingleInstance Force
+
+;-------------------------------------------------------
+; Majuscules françaises impossibles au clavier
+;-------------------------------------------------------
+
+<!<+e::Send, {U+00C9} ; Ctrl+LShift+E = É
+<!>+e::Send, {U+00C8} ; Ctrl+RShift+E = È
+<!<+a::Send, {U+00C0} ; Ctrl+LShift+A = À
+<!<+c::Send, {U+00C7} ; Ctrl+LShift+C = Ç
+<!<+o::Send, {U+0152} ; Ctrl+LShift+O = Œ
+:*:oe::{U+0153} ; o+e = œ
+:*:ae::{U+00E6} ; a+e = æ
