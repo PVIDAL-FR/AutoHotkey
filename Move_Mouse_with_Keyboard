@@ -1,0 +1,25 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+SetTitleMatchMode 2
+#SingleInstance Force
+
+;-------------------------------------------------------
+; Simulate mouse movement with a Keyboard
+;-------------------------------------------------------
+
+; Left click with Windows key
+LWin::LButton
+
+; Right click with Menu (Apps) key
+AppsKey::RButton
+
+; Middle click with Pause key
+Pause::MButton
+
+;LCtrl+Arrow key to move the mouse
+<^Right::MouseMove, 20, 0, 0, R
+<^Left::MouseMove, -20, 0, 0, R
+<^Up::MouseMove, 0, -20, 0, R
+<^Down::MouseMove, 0, 20, 0, R
