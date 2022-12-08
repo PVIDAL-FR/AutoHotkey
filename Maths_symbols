@@ -1,0 +1,58 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+SetTitleMatchMode 2
+#SingleInstance Force
+
+;-------------------------------------------------------
+; Maths symbols
+;-------------------------------------------------------
+
+; Greek Letters
+; Press Alt Gr + Roman letter. Press also Shift to get the capital letter.
+<^>!a::Send, {U+03B1} ; α
+<^>!b::Send, {U+03B2} ; β
+<^>!g::Send, {U+03B3} ; γ
+<^>!+g::Send, {U+0393} ; Γ
+<^>!d::Send, {U+03B4} ; δ
+<^>!+d::Send, {U+0394} ; Δ
+<^>!e::Send, {U+03B5} ; ε
+<^>!z::Send, {U+03B6} ; ζ
+<^>!n::Send, {U+03B7} ; η
+<^>!t::Send, {U+03B8} ; θ
+<^>!+t::Send, {U+0398} ; Θ
+<^>!l::Send, {U+03BB} ; λ
+<^>!+l::Send, {U+039B} ; Λ
+<^>!m::Send, {U+03BC} ; μ
+<^>!v::Send, {U+03BC} ; ν
+<^>!k::Send, {U+03BC} ; ξ
+<^>!p::Send, {U+03C0} ; π
+<^>!r::Send, {U+03C1} ; ρ
+<^>!s::Send, {U+03C3} ; σ
+<^>!+s::Send, {U+03A3} ; Σ
+<^>!q::Send, {U+03C4} ; τ (t is for theta, so I use q)
+<^>!f::Send, {U+03C6} ; φ
+<^>!+f::Send, {U+03A6} ; Φ
+<^>!x::Send, {U+03BC} ; χ
+<^>!y::Send, {U+03C8} ; ψ
+<^>!+y::Send, {U+03A8} ; Ψ
+<^>!w::Send, {U+03C9} ; ω
+<^>!+w::Send, {U+03A9} ; Ω
+
+; Arrows
+:*:<-::{U+2190} ; ←
+:*:|^::{U+2191} ; ↑
+:*:->::{U+2192} ; →
+:*:|v::{U+2193} ; ↓
+:*:/^::{U+2197} ; ↗
+:*:\v::{U+2198} ; ↘
+
+; Maths
+<!d::Send, {U+00F7} ; ÷ (Alt+D)
+:*:~=::{U+2248} ; ≈
+:*:/=::{U+2260} ; ≠
+:*:<=::{U+2264} ; ≤
+:*:>=::{U+2265} ; ≥
+:*:=>::{U+21D2} ; ⇒
+:*:infm::{U+221E} ; ∞
