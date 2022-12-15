@@ -25,7 +25,7 @@ SetTitleMatchMode 2
 <^>!l::Send, {U+03BB} ; λ
 <^>!+l::Send, {U+039B} ; Λ
 <^>!m::Send, {U+03BC} ; μ
-<^>!v::Send, {U+03BC} ; ν
+<^>!v::Send, {U+03BD} ; ν
 <^>!k::Send, {U+03BC} ; ξ
 <^>!p::Send, {U+03C0} ; π
 <^>!r::Send, {U+03C1} ; ρ
